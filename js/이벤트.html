@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트</title>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+            
+
+            // *마우스 이벤트
+                // => mousemove: 엘리먼트 안에서 마우스가 움직였을 때
+                // => mouseenter: 엘리먼트 안에 마우스가 들어갔을 때
+                // => mouseleave: 엘리먼트 밖으로 마우스가 나갔을 때
+                // => hover: 엘리먼트에 마우스가 들어가거나 나갔을 때
+                // => mousedown: 엘리먼트에 마우스를 눌렀을 때
+                // => mouseup: 엘리먼트의 마우스를 떼었을 때
+                // => clike: 엘리먼트의 마우스를 눌렸다 떼었을 때
+                // => dblclick: 일정 시간 내에 마우스를 두번 눌렀다 떼었을 때
+
+            // *마우스 이벤트
+            // $('선택자').이벤트명(function(){
+            //     ...
+            // });
+
+            $(".box").css({
+               width: 300,
+                height: 300,
+                backgroundColor: "lightgray",
+                margin: "auto"
+            });
+
+            // $('.box').mousemove(function(){
+            //     $('.box').css({
+            //        backgroundColor: "black" 
+            //     });
+            // });
+
+            // $(".box").mouseenter(function(){
+            //     $('.box').css({
+            //         width: 500
+            //     });
+            // });
+
+            // $('.box').mouseleave(function(){
+            //     $('.box').css({
+            //         width: 300
+            //     });
+            // });
+
+            // $('.box').hover(function(){
+            //     $('.box').css({
+            //         width: 500
+            //     });
+            // });
+
+            // $('.box').mousedown(function(){
+            //     $('.box').css({
+            //         borderRadius: "50%"
+            //     });
+            // });
+
+            // $(".box").mouseup(function(){
+            //     $('.box').css({
+            //          borderRadius: "0"
+            //     });
+            // });
+
+            // $('.box').click(function(){
+            //     $('.box').css({
+            //         transform: "rotate(45deg)"
+            //     });
+            // });
+
+            // $('.box').dblclick(function(){
+            //     $('.box').css({
+            //         backgroundColor: "blue"
+            //     });
+            // });
+
+            // *hover 이벤트는
+            // 콜백함수를 이용해 작성해줘야 함
+
+            // $('.box').hover(function(){
+            //     $('.box').css({
+            //         backgroundColor: "teal"
+            //     });
+            // },function(){
+            //     $(".box").css({
+            //         backgroundColor: "orange"
+            //     });
+            // });
+
+            // $('.box').mousedown(function(){
+            //     $('.box').css({
+            //         transform: "skew(20deg) rotatez(30deg)"
+            //     })
+            // })
+            // $('.box').mouseup(function(){
+            //     $('.box').css({
+            //         backgroundColor: "pink"
+            //     })
+            // })
+
+            $('.box').click(function(){
+                $('.box').css({
+                    transform: "rotatez(45deg)" 
+                });
+            });
+            
+
+        }); //end
+
+    </script>
+
+
+</head>
+<body>
+
+    <div class="box"></div>
+    
+    
+</body>
+</html>
